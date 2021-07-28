@@ -1,0 +1,58 @@
+.borderCircle {
+  border-radius: 9999px;
+  border: 5px solid #ffffff;
+}
+
+.strHome {
+  font-family: power clear;
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.strHomeAnd {
+  font-family: power clear;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 40%;
+  text-align: start;
+  color: #ffffff;
+}
+
+.myName {
+  font-family: Arcadepix;
+  color: #08c0e9;
+}
+
+.highlightedText {
+  color: #08c0e9;
+}
+
+.headingPres {
+  font-family: power clear;
+  text-align: center;
+  color: #ffffff;
+}
+
+.buttom {
+  font-family: power clear;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.09);
+  font-size: 24px;
+  letter-spacing: 2px;
+  width: 136px;
+  height: 42px;
+  border: 2px solid white;
+}
+
+.buttonsSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 11em;
+}
+
+.fullContainer {
+  height: 100vh;
+  background: url(/images/StarrySky.gif) no-repeat;
+  background-size: cover;
+}
