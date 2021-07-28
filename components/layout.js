@@ -10,9 +10,10 @@ export const siteTitle = "Next.js Sample Website";
 
 export default function Layout({ children, home }) {
   return (
-    <>
+    <div className={utilStyles.fullContainer}>
+      <div></div>
       <div className={styles.container}>
-        <header className={styles.header}>
+        <div className={styles.subContainer}>
           {home ? (
             <>
               <TextMotion title>
@@ -48,16 +49,14 @@ export default function Layout({ children, home }) {
               </Link>
             </>
           )}
-        </header>
+        </div>
         <main>{children}</main>
-        {!home && (
-          <div className={UtilStyles.backToHome}>
-            <Link href="/">
-              <a>← Back to home</a>
-            </Link>
-          </div>
-        )}
       </div>
-    </>
+      <footer className={utilStyles.homeFooter}>
+        <div className={utilStyles.footerDiv}>
+          <p>test test</p>
+        </div>
+      </footer>
+    </div>
   );
 }

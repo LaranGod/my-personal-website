@@ -28,7 +28,7 @@ const ButtonMyJobs = React.forwardRef(({ onClick, href }, ref) => {
 
 export default function Home() {
   return (
-    <div className={utilStyles.fullContainer}>
+    <div>
       <Layout home>
         <div className="container">
           <Head>
@@ -47,16 +47,9 @@ export default function Home() {
                 I’m a Brazilian{" "}
                 <span className={utilStyles.highlightedText}>
                   Software developer
-                </span>
-                .
-              </p>
-              <p className={utilStyles.strHomeAnd}>And</p>
-              <p className={utilStyles.strHome}>
-                this site is a{" "}
-                <span className={utilStyles.highlightedText}>
-                  piece of my mind
-                </span>
-                .
+                </span>{" "}
+                <br /> <span className={utilStyles.strHomeAnd}>and</span> <br />
+                this site is a piece of my mind .
               </p>
             </TextMotion>
             <div className="grid"></div>
@@ -65,7 +58,7 @@ export default function Home() {
           <div className={utilStyles.buttonsSection}>
             <TextMotion>
               <ButtonMotion>
-                <Link href="/about" passHref>
+                <Link href="/aboutMe" passHref>
                   <ButtonAbout />
                 </Link>
               </ButtonMotion>
@@ -80,11 +73,6 @@ export default function Home() {
           </div>
         </div>
       </Layout>
-      <footer className={utilStyles.homeFooter}>
-        <div className={utilStyles.footerDiv}>
-          <p>test test</p>
-        </div>
-      </footer>
     </div>
   );
 }
