@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function TextMotion({ title, children }) {
+export default function OnStartMotion({ title, children }) {
   return (
     <>
       {title ? (
@@ -17,7 +17,7 @@ export default function TextMotion({ title, children }) {
                 scale: 1,
                 opacity: 1,
                 transition: {
-                  delay: 0.5,
+                  delay: 0.1,
                 },
               },
             }}
@@ -39,7 +39,7 @@ export default function TextMotion({ title, children }) {
                 scale: 1,
                 opacity: 1,
                 transition: {
-                  delay: 1,
+                  delay: 0.5,
                 },
               },
             }}
