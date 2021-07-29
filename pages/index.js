@@ -3,8 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import ButtonMotion from "../components/buttonMotion";
-import TextMotion from "../components/textMotion";
+import HoverMotion from "../components/hoverMotion";
+import OnStartMotion from "../components/onStartMotion";
 
 const ButtonAbout = React.forwardRef(({ onClick, href }, ref) => {
   return (
@@ -42,7 +42,7 @@ export default function Home() {
           </Head>
 
           <main>
-            <TextMotion>
+            <OnStartMotion>
               <p className={utilStyles.strHome}>
                 I’m a Brazilian{" "}
                 <span className={utilStyles.highlightedText}>
@@ -51,25 +51,25 @@ export default function Home() {
                 <br /> <span className={utilStyles.strHomeAnd}>and</span> <br />
                 this site is a piece of my mind .
               </p>
-            </TextMotion>
+            </OnStartMotion>
             <div className="grid"></div>
           </main>
 
           <div className={utilStyles.buttonsSection}>
-            <TextMotion>
-              <ButtonMotion>
+            <OnStartMotion>
+              <HoverMotion>
                 <Link href="/aboutMe" passHref>
                   <ButtonAbout />
                 </Link>
-              </ButtonMotion>
-            </TextMotion>
-            <TextMotion>
-              <ButtonMotion>
+              </HoverMotion>
+            </OnStartMotion>
+            <OnStartMotion>
+              <HoverMotion>
                 <Link href="/about" passHref>
                   <ButtonMyJobs />
                 </Link>
-              </ButtonMotion>
-            </TextMotion>
+              </HoverMotion>
+            </OnStartMotion>
           </div>
         </div>
       </Layout>

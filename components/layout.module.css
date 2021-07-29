@@ -11,5 +11,17 @@
 }
 
 .backToHome {
-  margin: 3rem 0 0;
+  display: flex;
+}
+
+.fullContainer {
+  height: 100vh;
+  background: url(/images/StarrySky.gif) no-repeat;
+  background-size: cover;
+}
+.homeFooter {
+  min-width: 100vw;
+  position: absolute;
+  padding: 50px 50px 0px 50px;
+  bottom: 0;
 }

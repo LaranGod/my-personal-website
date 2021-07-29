@@ -48,12 +48,6 @@
   margin: 2em 11em;
 }
 
-.fullContainer {
-  height: 100vh;
-  background: url(/images/StarrySky.gif) no-repeat;
-  background-size: cover;
-}
-
 .aboutText {
   display: flex;
   justify-content: center;
