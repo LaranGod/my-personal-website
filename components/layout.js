@@ -85,25 +85,30 @@ export default function Layout({ children, home }) {
         </div>
         <footer className={styles.homeFooter}>
           <div className={styles.footerDiv}>
-            <FontAwesomeIcon
-              icon={["fab", "linkedin"]}
-              className={styles.fontAw}
-            />
-
-            <FontAwesomeIcon
-              icon={["fab", "github"]}
-              className={styles.fontAw}
-            />
-
-            <FontAwesomeIcon
-              icon={["fab", "instagram"]}
-              className={styles.fontAw}
-            />
-
-            <FontAwesomeIcon
-              icon={["fab", "facebook"]}
-              className={styles.fontAw}
-            />
+            <OnStartMotion>
+              <FontAwesomeIcon
+                icon={["fab", "linkedin"]}
+                className={styles.fontAw}
+              />
+            </OnStartMotion>
+            <OnStartMotion>
+              <FontAwesomeIcon
+                icon={["fab", "github"]}
+                className={styles.fontAw}
+              />
+            </OnStartMotion>
+            <OnStartMotion>
+              <FontAwesomeIcon
+                icon={["fab", "instagram"]}
+                className={styles.fontAw}
+              />
+            </OnStartMotion>
+            <OnStartMotion>
+              <FontAwesomeIcon
+                icon={["fab", "facebook"]}
+                className={styles.fontAw}
+              />
+            </OnStartMotion>
           </div>
         </footer>
       </div>
