@@ -1,9 +1,21 @@
 import { motion } from "framer-motion";
 
-export default function HoverMotion({ children, image }) {
+export default function HoverMotion({ children, image, backHome }) {
   return (
     <>
-      {image ? (
+      {backHome ? (
+        <motion.div
+          className="backHomeMotion"
+          whileHover={{
+            scale: 1.2,
+            transition: {
+              duration: 0.2,
+            },
+          }}
+        >
+          {children}
+        </motion.div>
+      ) : image ? (
         <motion.div
           className="imageMotion"
           whileHover={{

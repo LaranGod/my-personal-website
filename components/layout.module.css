@@ -10,8 +10,17 @@
   align-items: center;
 }
 
-.backToHome {
+.backToHomeDiv {
   display: flex;
+  height: 8em;
+  width: auto;
+  padding: 50px 0 0 50px;
+}
+
+.backToHome {
+  color: white;
+  height: 50px;
+  width: 50px;
 }
 
 .fullContainer {
@@ -20,8 +29,15 @@
   background-size: cover;
 }
 .homeFooter {
+  height: 4em;
   min-width: 100vw;
   position: absolute;
-  padding: 50px 50px 0px 50px;
+  padding: 1em 1em 0px 1em;
   bottom: 0;
+}
+
+.fontAw {
+  color: white;
+  height: 2em;
+  width: 2em;
 }

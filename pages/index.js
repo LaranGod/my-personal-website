@@ -5,6 +5,11 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import HoverMotion from "../components/hoverMotion";
 import OnStartMotion from "../components/onStartMotion";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fas);
 
 const ButtonAbout = React.forwardRef(({ onClick, href }, ref) => {
   return (
@@ -40,6 +45,7 @@ export default function Home() {
               crossOrigin=""
             />
           </Head>
+
 
           <main>
             <OnStartMotion>
