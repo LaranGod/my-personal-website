@@ -1,11 +1,9 @@
-import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import OnStartMotion from "./onStartMotion";
 import HoverMotion from "./hoverMotion";
-import { add } from "lodash";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas } from "@fortawesome/free-solid-svg-icons";
