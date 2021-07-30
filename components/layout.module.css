@@ -29,10 +29,11 @@
   background-size: cover;
 }
 .homeFooter {
-  height: 4em;
+  display: flex;
+
+  height: 5em;
   min-width: 100vw;
   position: absolute;
-  padding: 1em 1em 0px 1em;
   bottom: 0;
 }
 
@@ -40,4 +41,12 @@
   color: white;
   height: 2em;
   width: 2em;
+}
+
+.footerDiv {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
 }

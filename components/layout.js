@@ -7,8 +7,9 @@ import HoverMotion from "./hoverMotion";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
 
-library.add(fas);
+library.add(fas, fab);
 
 const name = "Miguel";
 export const siteTitle = "Next.js Sample Website";
@@ -83,8 +84,26 @@ export default function Layout({ children, home }) {
           <main>{children}</main>
         </div>
         <footer className={styles.homeFooter}>
-          <div className={utilStyles.footerDiv}>
-            <FontAwesomeIcon icon="facebook" className={styles.fontAw} />
+          <div className={styles.footerDiv}>
+            <FontAwesomeIcon
+              icon={["fab", "linkedin"]}
+              className={styles.fontAw}
+            />
+
+            <FontAwesomeIcon
+              icon={["fab", "github"]}
+              className={styles.fontAw}
+            />
+
+            <FontAwesomeIcon
+              icon={["fab", "instagram"]}
+              className={styles.fontAw}
+            />
+
+            <FontAwesomeIcon
+              icon={["fab", "facebook"]}
+              className={styles.fontAw}
+            />
           </div>
         </footer>
       </div>
