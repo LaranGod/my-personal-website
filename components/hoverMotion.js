@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function HoverMotion({ children, image, backHome }) {
+export default function HoverMotion({ children, image, backHome, sMediaIcon }) {
   return (
     <>
       {backHome ? (
@@ -21,6 +21,18 @@ export default function HoverMotion({ children, image, backHome }) {
           whileHover={{
             position: "relative",
             scale: 1.1,
+            transition: {
+              duration: 0.2,
+            },
+          }}
+        >
+          {children}
+        </motion.div>
+      ) : sMediaIcon ? (
+        <motion.div
+          className="backHomeMotion"
+          whileHover={{
+            scale: 1.2,
             transition: {
               duration: 0.2,
             },
