@@ -87,34 +87,42 @@ export default function Layout({ children, home }) {
           <div className={styles.footerDiv}>
             <OnStartMotion>
               <HoverMotion sMediaIcon>
-                <FontAwesomeIcon
-                  icon={["fab", "linkedin"]}
-                  className={styles.fontAw}
-                />
+                <Link href="https://www.linkedin.com/in/miguel-am%C3%A2ncio-951420213/">
+                  <FontAwesomeIcon
+                    icon={["fab", "linkedin"]}
+                    className={styles.fontAw}
+                  />
+                </Link>
               </HoverMotion>
             </OnStartMotion>
             <OnStartMotion>
               <HoverMotion sMediaIcon>
-                <FontAwesomeIcon
-                  icon={["fab", "github"]}
-                  className={styles.fontAw}
-                />
+                <Link href="https://github.com/LaranGod/">
+                  <FontAwesomeIcon
+                    icon={["fab", "github"]}
+                    className={styles.fontAw}
+                  />
+                </Link>
               </HoverMotion>
             </OnStartMotion>
             <OnStartMotion>
               <HoverMotion sMediaIcon>
-                <FontAwesomeIcon
-                  icon={["fab", "instagram"]}
-                  className={styles.fontAw}
-                />
+                <Link href="https://www.instagram.com/miguelcunha05/">
+                  <FontAwesomeIcon
+                    icon={["fab", "instagram"]}
+                    className={styles.fontAw}
+                  />
+                </Link>
               </HoverMotion>
             </OnStartMotion>
             <OnStartMotion>
               <HoverMotion sMediaIcon>
-                <FontAwesomeIcon
-                  icon={["fab", "facebook"]}
-                  className={styles.fontAw}
-                />
+                <Link href="https://www.facebook.com/miguel.cunha.5243817">
+                  <FontAwesomeIcon
+                    icon={["fab", "facebook"]}
+                    className={styles.fontAw}
+                  />
+                </Link>
               </HoverMotion>
             </OnStartMotion>
           </div>
