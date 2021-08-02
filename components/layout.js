@@ -37,24 +37,6 @@ export default function Layout({ children, home }) {
           </header>
         )}
         <div className={styles.container}>
-          <div className={styles.subContainer}>
-            <Link href="/">
-              <OnStartMotion title>
-                <a>
-                  <HoverMotion image>
-                    <Image
-                      priority
-                      src="/images/ProfilePic.jpg"
-                      className={utilStyles.borderCircle}
-                      height={200}
-                      width={200}
-                      alt={name}
-                    />
-                  </HoverMotion>
-                </a>
-              </OnStartMotion>
-            </Link>
-          </div>
           <main>{children}</main>
         </div>
         <footer className={styles.homeFooter}>

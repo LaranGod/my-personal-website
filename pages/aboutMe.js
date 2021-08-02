@@ -19,6 +19,25 @@ export default function AboutME() {
           </Head>
 
           <main>
+            <div className={utilStyles.subContainer}>
+              <Link href="/">
+                <OnStartMotion title>
+                  <a>
+                    <HoverMotion image>
+                      <Image
+                        priority
+                        src="/images/ProfilePic.jpg"
+                        className={utilStyles.borderCircle}
+                        height={200}
+                        width={200}
+                        alt={name}
+                      />
+                    </HoverMotion>
+                  </a>
+                </OnStartMotion>
+              </Link>
+            </div>
+
             <div className={utilStyles.aboutText}>
               <OnStartMotion>
                 <p>
