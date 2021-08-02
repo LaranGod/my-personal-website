@@ -32,17 +32,20 @@ export default function Home() {
     <div className={utilStyles.fullContainerHome}>
       <header className={utilStyles.headerDiv}></header>
       <Layout home>
-        <OnStartMotion title>
-          <HoverMotion image>
-            <Image
-              priority
-              src="/images/Mando.jpg"
-              className={utilStyles.borderCircle}
-              height={200}
-              width={200}
-            />
-          </HoverMotion>
-        </OnStartMotion>
+        <div className={utilStyles.subContainer}>
+          <OnStartMotion title>
+            <HoverMotion image>
+              <Image
+                priority
+                src="/images/Mando.jpg"
+                className={utilStyles.borderCircle}
+                height={200}
+                width={200}
+              />
+            </HoverMotion>
+          </OnStartMotion>
+        </div>
+
         <OnStartMotion title>
           <h1 className={utilStyles.headingPres}>
             Hello there! My name is{" "}
