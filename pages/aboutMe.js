@@ -3,6 +3,8 @@ import Layout from "../components/layout";
 import Image from "next/image";
 import utilStyles from "../styles/utils.module.css";
 import OnStartMotion from "../components/onStartMotion";
+import HoverMotion from "../components/hoverMotion";
+import Link from "next/dist/client/link";
 
 export default function AboutME() {
   return (
@@ -31,7 +33,6 @@ export default function AboutME() {
                         className={utilStyles.borderCircle}
                         height={200}
                         width={200}
-                        alt={name}
                       />
                     </HoverMotion>
                   </a>
