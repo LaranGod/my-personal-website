@@ -38,48 +38,22 @@ export default function Layout({ children, home }) {
         )}
         <div className={styles.container}>
           <div className={styles.subContainer}>
-            {home ? (
-              <>
-                <header className={styles.backToHomeDiv}></header>
-                <OnStartMotion title>
+            <Link href="/">
+              <OnStartMotion title>
+                <a>
                   <HoverMotion image>
                     <Image
                       priority
-                      src="/images/Mando.jpg"
+                      src="/images/ProfilePic.jpg"
                       className={utilStyles.borderCircle}
                       height={200}
                       width={200}
                       alt={name}
                     />
                   </HoverMotion>
-                </OnStartMotion>
-                <OnStartMotion title>
-                  <h1 className={utilStyles.headingPres}>
-                    Hello there! My name is{" "}
-                    <span className={utilStyles.myName}>Miguel</span>.
-                  </h1>
-                </OnStartMotion>
-              </>
-            ) : (
-              <>
-                <Link href="/">
-                  <OnStartMotion title>
-                    <a>
-                      <HoverMotion image>
-                        <Image
-                          priority
-                          src="/images/ProfilePic.jpg"
-                          className={utilStyles.borderCircle}
-                          height={200}
-                          width={200}
-                          alt={name}
-                        />
-                      </HoverMotion>
-                    </a>
-                  </OnStartMotion>
-                </Link>
-              </>
-            )}
+                </a>
+              </OnStartMotion>
+            </Link>
           </div>
           <main>{children}</main>
         </div>

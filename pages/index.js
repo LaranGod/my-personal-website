@@ -29,7 +29,27 @@ const ButtonMyJobs = React.forwardRef(({ onClick, href }, ref) => {
 export default function Home() {
   return (
     <div>
+      <header className={utilStyles.headerDiv}></header>
       <Layout home>
+        <OnStartMotion title>
+          <HoverMotion image>
+            <Image
+              priority
+              src="/images/Mando.jpg"
+              className={utilStyles.borderCircle}
+              height={200}
+              width={200}
+              alt={name}
+            />
+          </HoverMotion>
+        </OnStartMotion>
+        <OnStartMotion title>
+          <h1 className={utilStyles.headingPres}>
+            Hello there! My name is{" "}
+            <span className={utilStyles.myName}>Miguel</span>.
+          </h1>
+        </OnStartMotion>
+
         <div className="container">
           <Head>
             <title>Larangod</title>
