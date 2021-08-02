@@ -45,6 +45,7 @@
 
 .footerDiv {
   display: flex;
+  height: 4em;
   width: 300px;
   justify-content: space-around;
   align-items: center;

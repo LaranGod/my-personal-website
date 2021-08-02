@@ -65,7 +65,7 @@ export default function Home() {
             </OnStartMotion>
             <OnStartMotion>
               <HoverMotion>
-                <Link href="/about" passHref>
+                <Link href="/myJobs" passHref>
                   <ButtonMyJobs />
                 </Link>
               </HoverMotion>

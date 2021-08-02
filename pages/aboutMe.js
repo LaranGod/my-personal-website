@@ -9,7 +9,7 @@ export default function AboutME() {
       <Layout>
         <div className="container">
           <Head>
-            <title>Larangod</title>
+            <title>About Me</title>
             <link
               rel="preload"
               href="/fonts/Arcadepix/ARCADEPI.ttf"

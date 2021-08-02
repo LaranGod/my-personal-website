@@ -55,3 +55,11 @@
   font-size: 26px;
   color: #ffffff;
 }
+
+.workComponent {
+  opacity: 0.1;
+}
+
+.worksComponentDiv {
+  display: flex;
+}
