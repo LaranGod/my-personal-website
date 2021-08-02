@@ -56,10 +56,22 @@
   color: #ffffff;
 }
 
-.workComponent {
-  opacity: 0.1;
+.pageBackground {
+  height: 100vh;
+  background: url(/images/StarrySky.gif) no-repeat;
+  background-size: cover;
 }
 
 .worksComponentDiv {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 10%;
+  max-width: 100rem;
+  min-height: 40rem;
+  padding-top: 8em;
+  background-color: rgba(255, 255, 255, 0.09);
+}
+.workComponent {
+  opacity: 0.1;
 }

@@ -19,7 +19,31 @@ export default function MyJobs() {
         </Head>
 
         <main>
-          <div className={utilStyles.worksComponentDiv}></div>
+          <div className={utilStyles.pageBackground}>
+            <div className={utilStyles.worksComponentDiv}>
+              <img
+                priority
+                className={utilStyles.workComponent}
+                src="/images/WorkComponent.jpg"
+                height="10%"
+                width="20%"
+              />
+              <img
+                priority
+                className={utilStyles.workComponent}
+                src="/images/WorkComponent.jpg"
+                height="10%"
+                width="20%"
+              />
+              <img
+                priority
+                className={utilStyles.workComponent}
+                src="/images/WorkComponent.jpg"
+                height="10%"
+                width="20%"
+              />
+            </div>
+          </div>
         </main>
       </div>
     </div>
