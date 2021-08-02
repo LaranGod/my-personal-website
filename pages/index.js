@@ -29,7 +29,7 @@ const ButtonMyJobs = React.forwardRef(({ onClick, href }, ref) => {
 
 export default function Home() {
   return (
-    <div>
+    <div className={utilStyles.fullContainerHome}>
       <header className={utilStyles.headerDiv}></header>
       <Layout home>
         <OnStartMotion title>
@@ -40,7 +40,6 @@ export default function Home() {
               className={utilStyles.borderCircle}
               height={200}
               width={200}
-              alt={name}
             />
           </HoverMotion>
         </OnStartMotion>

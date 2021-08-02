@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function MyJobs() {
   return (
-    <div>
+    <div className={utilStyles.fullContainerHome}>
       <div className="container">
         <Head>
           <title>My jobs</title>

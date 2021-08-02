@@ -15,7 +15,7 @@ export const siteTitle = "Next.js Sample Website";
 export default function Layout({ children, home }) {
   return (
     <>
-      <div className={styles.fullContainer}>
+      <div>
         {!home && (
           <header>
             <div className={styles.backToHomeDiv}>
@@ -35,7 +35,7 @@ export default function Layout({ children, home }) {
           </header>
         )}
         <div className={styles.container}>
-          <main>{children}</main>
+          <div>{children}</div>
         </div>
         <footer className={styles.homeFooter}>
           <div className={styles.footerDiv}>

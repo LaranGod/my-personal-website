@@ -5,6 +5,12 @@
   padding: 50px 0 0 50px;
 }
 
+.fullContainerHome {
+  height: 100vh;
+  background: url(/images/StarrySky.gif) no-repeat;
+  background-size: cover;
+}
+
 .subContainer {
   display: flex;
   flex-direction: column;

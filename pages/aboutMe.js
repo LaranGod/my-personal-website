@@ -8,7 +8,7 @@ import Link from "next/dist/client/link";
 
 export default function AboutME() {
   return (
-    <div>
+    <div className={utilStyles.fullContainerHome}>
       <Layout>
         <div className="container">
           <Head>
