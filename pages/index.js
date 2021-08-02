@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import HoverMotion from "../components/hoverMotion";
 import OnStartMotion from "../components/onStartMotion";
+import Image from "next/image";
 
 const ButtonAbout = React.forwardRef(({ onClick, href }, ref) => {
   return (
