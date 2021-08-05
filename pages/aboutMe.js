@@ -1,17 +1,18 @@
 import Head from "next/head";
-import Link from "next/link";
-import Layout, { siteTitle } from "../components/layout";
+import Layout from "../components/layout";
+import Image from "next/image";
 import utilStyles from "../styles/utils.module.css";
-import HoverMotion from "../components/hoverMotion";
 import OnStartMotion from "../components/onStartMotion";
+import HoverMotion from "../components/hoverMotion";
+import Link from "next/dist/client/link";
 
 export default function AboutME() {
   return (
-    <div>
+    <div className={utilStyles.fullContainerHome}>
       <Layout>
         <div className="container">
           <Head>
-            <title>Larangod</title>
+            <title>About Me</title>
             <link
               rel="preload"
               href="/fonts/Arcadepix/ARCADEPI.ttf"
@@ -21,6 +22,24 @@ export default function AboutME() {
           </Head>
 
           <main>
+            <div className={utilStyles.subContainer}>
+              <Link href="/">
+                <OnStartMotion title>
+                  <a>
+                    <HoverMotion image>
+                      <Image
+                        priority
+                        src="/images/ProfilePic.jpg"
+                        className={utilStyles.borderCircle}
+                        height={200}
+                        width={200}
+                      />
+                    </HoverMotion>
+                  </a>
+                </OnStartMotion>
+              </Link>
+            </div>
+
             <div className={utilStyles.aboutText}>
               <OnStartMotion>
                 <p>

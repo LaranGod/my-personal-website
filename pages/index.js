@@ -1,10 +1,11 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Layout, { siteTitle } from "../components/layout";
+import Layout from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import HoverMotion from "../components/hoverMotion";
 import OnStartMotion from "../components/onStartMotion";
+import Image from "next/image";
 
 const ButtonAbout = React.forwardRef(({ onClick, href }, ref) => {
   return (
@@ -28,8 +29,30 @@ const ButtonMyJobs = React.forwardRef(({ onClick, href }, ref) => {
 
 export default function Home() {
   return (
-    <div>
+    <div className={utilStyles.fullContainerHome}>
+      <header className={utilStyles.headerDiv}></header>
       <Layout home>
+        <div className={utilStyles.subContainer}>
+          <OnStartMotion title>
+            <HoverMotion image>
+              <Image
+                priority
+                src="/images/Mando.jpg"
+                className={utilStyles.borderCircle}
+                height={200}
+                width={200}
+              />
+            </HoverMotion>
+          </OnStartMotion>
+        </div>
+
+        <OnStartMotion title>
+          <h1 className={utilStyles.headingPres}>
+            Hello there! My name is{" "}
+            <span className={utilStyles.myName}>Miguel</span>.
+          </h1>
+        </OnStartMotion>
+
         <div className="container">
           <Head>
             <title>Larangod</title>
@@ -65,7 +88,7 @@ export default function Home() {
             </OnStartMotion>
             <OnStartMotion>
               <HoverMotion>
-                <Link href="/about" passHref>
+                <Link href="/myJobs" passHref>
                   <ButtonMyJobs />
                 </Link>
               </HoverMotion>
