@@ -6,13 +6,14 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import MyJobs from "../pages/myJobs";
 
 library.add(fas, fab);
 
 const name = "Miguel";
 export const siteTitle = "Next.js Sample Website";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, myJobs }) {
   return (
     <>
       <div>
@@ -34,9 +35,16 @@ export default function Layout({ children, home }) {
             </div>
           </header>
         )}
-        <div className={styles.container}>
-          <div>{children}</div>
-        </div>
+        {!myJobs ? (
+          <div className={styles.container}>
+            <div>{children}</div>
+          </div>
+        ) : (
+          <div className={styles.containerJobs}>
+            <div>{children}</div>
+          </div>
+        )}
+
         <footer className={styles.homeFooter}>
           <div className={styles.footerDiv}>
             <OnStartMotion>
