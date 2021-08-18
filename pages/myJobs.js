@@ -6,8 +6,10 @@ import Image from "next/image";
 
 export default function MyJobs() {
   return (
-    <div className={utilStyles.fullContainerHome}>
-      <div className="container">
+    <div className={utilStyles.fullContainer}>
+      <Layout myJobs>
+        
+      {/* <div className="container"> */}
         <Head>
           <title>My jobs</title>
           <link
@@ -19,33 +21,42 @@ export default function MyJobs() {
         </Head>
 
         <main>
-          <div className={utilStyles.pageBackground}>
             <div className={utilStyles.worksComponentDiv}>
-              <img
+              {/* <img
                 priority
                 className={utilStyles.workComponent}
-                src="/images/WorkComponent.jpg"
-                height="10%"
-                width="20%"
+                src="/images/jobSection.png"
+          
+                width="30%"
               />
               <img
                 priority
                 className={utilStyles.workComponent}
-                src="/images/WorkComponent.jpg"
-                height="10%"
-                width="20%"
+                src="/images/jobSection.png"
+                
+                width="30%"
               />
               <img
                 priority
                 className={utilStyles.workComponent}
-                src="/images/WorkComponent.jpg"
-                height="10%"
-                width="20%"
-              />
+                src="/images/jobSection.png"
+         
+                width="30%"
+              /> */}
+              <div className={utilStyles.workComponent}>
+
+              </div>
+              <div className={utilStyles.workComponent}>
+
+              </div>
+              <div className={utilStyles.workComponent}>
+
+              </div>
             </div>
-          </div>
+          
         </main>
-      </div>
+      {/* </div> */}
+      </Layout>
     </div>
   );
 }

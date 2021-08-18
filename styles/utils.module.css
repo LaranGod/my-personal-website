@@ -5,7 +5,7 @@
   padding: 50px 0 0 50px;
 }
 
-.fullContainerHome {
+.fullContainer {
   height: 100vh;
   background: url(/images/StarrySky.gif) no-repeat;
   background-size: cover;
@@ -85,12 +85,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 0 10%;
-  max-width: 100rem;
-  min-height: 40rem;
-  padding-top: 8em;
-  background-color: rgba(255, 255, 255, 0.09);
+  padding: 2.6% 0;
+  /* margin: 0 10%;
+  max-width: 100rem; */
+  min-height: 25rem;
+  background-color: rgba(255, 255, 255, 0.02);
 }
+
 .workComponent {
-  opacity: 0.1;
+  min-height: fit-content;
+  width: 30%;
+  border: 5px solid rgba(8, 192, 233, 0.5);
+ 
 }
