@@ -4,6 +4,7 @@ import utilStyles from "../styles/utils.module.css";
 import OnStartMotion from "../components/onStartMotion";
 import HoverMotion from "../components/hoverMotion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function MyJobs() {
   return (
@@ -59,32 +60,40 @@ export default function MyJobs() {
 
               <div className={utilStyles.workComponent}>
                 <HoverMotion workImage>
-                  <img
+                <Link href="https://github.com/LaranGod/InfoCepReact">
+                <img
                     priority
-                    src="/images/jobSection.png"
+                    src="/images/Infocep.jpeg"
                     height="auto"
                     width="auto"
                   />
+                </Link>
+                  
+                  
                 </HoverMotion>
               </div>
               <div className={utilStyles.workComponent}>
                 <HoverMotion workImage>
+                <Link href="https://github.com/LaranGod/UploadMaterialForm">
                   <img
                     priority
-                    src="/images/jobSection.png"
+                    src="/images/Material_Form.jpeg"
                     height="auto"
                     width="auto"
                   />
+                  </Link>
                 </HoverMotion>
               </div>
               <div className={utilStyles.workComponent}>
                 <HoverMotion workImage>
+                <Link href="https://dribbble.com/shots/15876555-Rent">
                   <img
                     priority
-                    src="/images/jobSection.png"
+                    src="/images/Rent_mobile.png"
                     height="auto"
                     width="auto"
                   />
+                  </Link>
                 </HoverMotion>
               </div>
             </div>
