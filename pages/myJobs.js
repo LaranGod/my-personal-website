@@ -21,16 +21,15 @@ export default function MyJobs() {
         </Head>
 
         <main>
-        <OnStartMotion title>
-          <h1 className={utilStyles.headingPres}>
-            My {" "}
-            <span className={utilStyles.myName}>Projects</span>.
-          </h1>
-        </OnStartMotion>
+          <OnStartMotion title>
+            <h1 className={utilStyles.headingPres}>
+              My <span className={utilStyles.myName}>Projects</span>.
+            </h1>
+          </OnStartMotion>
 
           <OnStartMotion>
-          <div className={utilStyles.worksComponentDiv}>
-            {/* <img
+            <div className={utilStyles.worksComponentDiv}>
+              {/* <img
                 priority
                 className={utilStyles.workComponent}
                 src="/images/jobSection.png"
@@ -52,16 +51,38 @@ export default function MyJobs() {
                 width="30%"
               /> */}
 
-            
-              <div className={utilStyles.workComponent}></div>
-             
-              
-              <div className={utilStyles.workComponent}></div>
-              <div className={utilStyles.workComponent}></div>
-            
-          </div>
+              <div className={utilStyles.workComponent}>
+                <HoverMotion workImage>
+                  <img
+                    priority
+                    src="/images/jobSection.png"
+                    height="auto"
+                    width="auto"
+                  />
+                </HoverMotion>
+              </div>
+              <div className={utilStyles.workComponent}>
+                <HoverMotion workImage>
+                  <img
+                    priority
+                    src="/images/jobSection.png"
+                    height="auto"
+                    width="auto"
+                  />
+                </HoverMotion>
+              </div>
+              <div className={utilStyles.workComponent}>
+                <HoverMotion workImage>
+                  <img
+                    priority
+                    src="/images/jobSection.png"
+                    height="auto"
+                    width="auto"
+                  />
+                </HoverMotion>
+              </div>
+            </div>
           </OnStartMotion>
-          
         </main>
         {/* </div> */}
       </Layout>

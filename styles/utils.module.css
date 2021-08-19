@@ -96,5 +96,8 @@
   min-height: fit-content;
   width: 30%;
   border: 5px solid rgba(8, 192, 233, 0.5);
- 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
 }

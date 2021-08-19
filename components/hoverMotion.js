@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
+import styles from "./hoverMotion.module.css";
 
-export default function HoverMotion({ children, image, backHome, sMediaIcon }) {
+export default function HoverMotion({ children, image, backHome, sMediaIcon, workImage }) {
   return (
     <>
       {backHome ? (
         <motion.div
-          className="backHomeMotion"
+          className={styles.backHomeMotion}
           whileHover={{
             scale: 1.2,
             transition: {
@@ -17,7 +18,7 @@ export default function HoverMotion({ children, image, backHome, sMediaIcon }) {
         </motion.div>
       ) : image ? (
         <motion.div
-          className="imageMotion"
+          className={styles.imageMotion}
           whileHover={{
             position: "relative",
             scale: 1.1,
@@ -30,9 +31,22 @@ export default function HoverMotion({ children, image, backHome, sMediaIcon }) {
         </motion.div>
       ) : sMediaIcon ? (
         <motion.div
-          className="backHomeMotion"
+          className={styles.backHomeMotion}
           whileHover={{
             scale: 1.2,
+            transition: {
+              duration: 0.2,
+            },
+          }}
+        >
+          {children}
+        </motion.div>
+      ) : workImage ? (
+        <motion.div
+          className={styles.workImage}
+          whileHover={{
+            position: "relative",
+            scale: 1.1,
             transition: {
               duration: 0.2,
             },
@@ -42,11 +56,11 @@ export default function HoverMotion({ children, image, backHome, sMediaIcon }) {
         </motion.div>
       ) : (
         <motion.div
-          className="buttonMotion"
+          className={styles.buttonMotion}
           whileHover={{
             position: "relative",
             scale: 1.2,
-            backgroundColor: "rgba(30, 100, 255, 0.5)",
+            backgroundColor: "rgba(8, 192, 233, 0.1)",
             transition: {
               duration: 0.2,
             },
@@ -54,7 +68,7 @@ export default function HoverMotion({ children, image, backHome, sMediaIcon }) {
         >
           {children}
         </motion.div>
-      )}
+      ) }
     </>
   );
 }
