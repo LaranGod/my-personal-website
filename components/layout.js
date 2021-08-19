@@ -1,4 +1,5 @@
 import styles from "./layout.module.css";
+import Head from "next/head";
 import Link from "next/link";
 import OnStartMotion from "./onStartMotion";
 import HoverMotion from "./hoverMotion";
@@ -12,10 +13,11 @@ library.add(fas, fab);
 const name = "Miguel";
 export const siteTitle = "Next.js Sample Website";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, myJobs }) {
   return (
     <>
       <div>
+        
         {!home && (
           <header>
             <div className={styles.backToHomeDiv}>
@@ -34,9 +36,15 @@ export default function Layout({ children, home }) {
             </div>
           </header>
         )}
-        <div className={styles.container}>
-          <div>{children}</div>
-        </div>
+        {!myJobs ? (
+          <div className={styles.container}>
+            <div>{children}</div>
+          </div>
+        ) : (
+          <div className={styles.containerJobs}>
+            <div>{children}</div>
+          </div>
+        )}
         <footer className={styles.homeFooter}>
           <div className={styles.footerDiv}>
             <OnStartMotion>

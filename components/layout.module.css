@@ -1,7 +1,13 @@
 .container {
   max-width: 50rem;
   margin: auto;
-  padding-top: 8em;
+  padding-top: 4em;
+}
+
+.containerJobs {
+  max-width: 65%;
+  margin: auto;
+  padding-top: 4em;
 }
 
 .backToHomeDiv {

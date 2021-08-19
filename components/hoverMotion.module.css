@@ -1,0 +1,6 @@
+.workImage{
+    display: flex;
+    justify-content: center;
+    max-height: 50%;
+    max-width: 80%;
+} 
