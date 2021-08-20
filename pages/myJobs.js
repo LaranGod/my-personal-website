@@ -4,6 +4,10 @@ import utilStyles from "../styles/utils.module.css";
 import OnStartMotion from "../components/onStartMotion";
 import HoverMotion from "../components/hoverMotion";
 import Image from "next/image";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
 
 export default function MyJobs() {
   return (
@@ -70,13 +74,26 @@ export default function MyJobs() {
                       height="auto"
                       width="auto"
                     />
+                    Infocep
                   </a>
+
+                  <div className={utilStyles.techIcons}>
+                    <FontAwesomeIcon
+                      icon={["fab", "react"]}
+                      className={utilStyles.techIcon}
+                    />
+
+                    <FontAwesomeIcon
+                      icon={["fab", "node"]}
+                      className={utilStyles.techIcon}
+                    />
+                  </div>
                 </HoverMotion>
               </div>
               <div className={utilStyles.workComponent}>
                 <HoverMotion workImage>
                   <a
-                    href="https://dribbble.com/shots/15876555-Rent"
+                    href="https://github.com/LaranGod/UploadMaterialForm"
                     target="_blank"
                   >
                     <img
@@ -86,7 +103,14 @@ export default function MyJobs() {
                       height="auto"
                       width="auto"
                     />
+                    Material Form
                   </a>
+                  <div className={utilStyles.techIcons}>
+                    <FontAwesomeIcon
+                      icon={["fab", "react"]}
+                      className={utilStyles.techIcon}
+                    />
+                  </div>
                 </HoverMotion>
               </div>
               <div className={utilStyles.workComponent}>
@@ -102,7 +126,14 @@ export default function MyJobs() {
                       height="auto"
                       width="auto"
                     />
+                    Rent Mobile
                   </a>
+                  <div className={utilStyles.techIcons}>
+                    <FontAwesomeIcon
+                      icon={["fab", "figma"]}
+                      className={utilStyles.techIcon}
+                    />
+                  </div>
                 </HoverMotion>
               </div>
             </div>

@@ -87,7 +87,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 2.6% 0;
   /* margin: 0 10%;
   max-width: 100rem; */
   min-height: 25rem;
@@ -97,16 +96,30 @@
   min-height: fit-content;
   width: 30%;
 
-
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
-
+  text-align: center;
 }
 
-.jobImage{
+.jobImage {
   width: 200px;
   height: 200px;
-  border-radius:9999px;
+  border-radius: 9999px;
   border: 5px solid rgba(8, 192, 233, 0.5);
+}
+
+.techIcons {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.techIcon {
+  color: white;
+  height: 2.5em;
+  width: 2.5em;
 }
