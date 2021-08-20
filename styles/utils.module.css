@@ -23,21 +23,22 @@
 }
 
 .strHome {
-  font-family: power clear;
+  font-family: "Noto-Sans";
   text-align: center;
   font-size: 26px;
   color: #ffffff;
 }
 
 .strHomeAnd {
-  font-family: power clear;
+  font-family: "Noto-Sans";
   font-size: 24;
   color: #ffffff;
 }
 
 .myName {
-  font-family: Arcadepix;
+  font-family: "MandaloreRegular";
   color: #08c0e9;
+  letter-spacing: 2px;
 }
 
 .highlightedText {
@@ -45,16 +46,17 @@
 }
 
 .headingPres {
-  font-family: power clear;
+  font-family: "MandaloreRegular";
   text-align: center;
   color: #ffffff;
+  letter-spacing: 2px;
 }
 
 .buttom {
-  font-family: power clear;
+  font-family: "MandaloreRegular";
   color: white;
   background-color: rgba(255, 255, 255, 0.09);
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 2px;
   width: 136px;
   height: 42px;
@@ -70,7 +72,7 @@
 .aboutText {
   display: flex;
   justify-content: center;
-  font-family: power clear;
+  font-family: "Noto-Sans";
   font-size: 26px;
   color: #ffffff;
 }
@@ -85,12 +87,26 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 0 10%;
-  max-width: 100rem;
-  min-height: 40rem;
-  padding-top: 8em;
-  background-color: rgba(255, 255, 255, 0.09);
+  padding: 2.6% 0;
+  /* margin: 0 10%;
+  max-width: 100rem; */
+  min-height: 25rem;
+  background-color: rgba(255, 255, 255, 0.02);
 }
 .workComponent {
-  opacity: 0.1;
+  min-height: fit-content;
+  width: 30%;
+
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.jobImage{
+  width: 200px;
+  height: 200px;
+  border-radius:9999px;
+  border: 5px solid rgba(8, 192, 233, 0.5);
 }
