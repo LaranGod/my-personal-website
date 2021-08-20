@@ -92,6 +92,7 @@
   min-height: 25rem;
   background-color: rgba(255, 255, 255, 0.02);
 }
+
 .workComponent {
   min-height: fit-content;
   width: 30%;
@@ -99,8 +100,12 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center;
+  
   text-align: center;
+  font-family: "MandaloreRegular";
+  color: #08c0e9;
+  font-size: 24px ;
+  letter-spacing: 1px;
 }
 
 .jobImage {
@@ -108,6 +113,7 @@
   height: 200px;
   border-radius: 9999px;
   border: 5px solid rgba(8, 192, 233, 0.5);
+  object-fit: cover;
 }
 
 .techIcons {
@@ -120,6 +126,10 @@
 
 .techIcon {
   color: white;
-  height: 2.5em;
-  width: 2.5em;
+  height: 2em;
+  width: 2em;
+}
+
+.linkNames {
+  color: #08c0e9;
 }

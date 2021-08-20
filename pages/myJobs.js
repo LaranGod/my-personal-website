@@ -63,7 +63,7 @@ export default function MyJobs() {
 
               <div className={utilStyles.workComponent}>
                 <HoverMotion workImage>
-                  <a
+                  <a className={utilStyles.linkNames}
                     href="https://github.com/LaranGod/UploadMaterialForm"
                     target="_blank"
                   >
@@ -71,8 +71,7 @@ export default function MyJobs() {
                       className={utilStyles.jobImage}
                       priority
                       src="/images/Infocep.jpeg"
-                      height="auto"
-                      width="auto"
+                      
                     />
                     Infocep
                   </a>
@@ -92,7 +91,7 @@ export default function MyJobs() {
               </div>
               <div className={utilStyles.workComponent}>
                 <HoverMotion workImage>
-                  <a
+                  <a className={utilStyles.linkNames}
                     href="https://github.com/LaranGod/UploadMaterialForm"
                     target="_blank"
                   >
@@ -115,7 +114,7 @@ export default function MyJobs() {
               </div>
               <div className={utilStyles.workComponent}>
                 <HoverMotion workImage>
-                  <a
+                  <a className={utilStyles.linkNames}
                     href="https://dribbble.com/shots/15876555-Rent"
                     target="_blank"
                   >
@@ -123,8 +122,7 @@ export default function MyJobs() {
                       className={utilStyles.jobImage}
                       priority
                       src="/images/Rent_mobile.png"
-                      height="auto"
-                      width="auto"
+                     
                     />
                     Rent Mobile
                   </a>
@@ -133,6 +131,11 @@ export default function MyJobs() {
                       icon={["fab", "figma"]}
                       className={utilStyles.techIcon}
                     />
+                    <img 
+                    className={utilStyles.techIcon}
+                    src="images/ps.png"
+                    >
+                    </img>
                   </div>
                 </HoverMotion>
               </div>
