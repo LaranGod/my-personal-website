@@ -1,7 +1,12 @@
 .container {
-  max-width: 50rem;
+  max-width: 50%;
   margin: auto;
-  padding-top: 8em;
+  padding-top: 4em;
+}
+.containerJobs {
+  max-width: 70%;
+  margin: auto;
+  padding-top: 4em;
 }
 
 .backToHomeDiv {
@@ -22,6 +27,7 @@
   background: url(/images/StarrySky.gif) no-repeat;
   background-size: cover;
 }
+
 .homeFooter {
   display: flex;
 
@@ -46,16 +52,4 @@
   margin: auto;
 }
 
-.worksComponentDiv {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 0 10%;
-  max-width: 100rem;
-  min-height: 40rem;
-  padding-top: 8em;
-  background-color: rgba(255, 255, 255, 0.09);
-}
-.workComponent {
-  opacity: 0.1;
-}
+
