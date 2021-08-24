@@ -1,4 +1,5 @@
 import styles from "./layout.module.css";
+import Head from "next/head";
 import Link from "next/link";
 import OnStartMotion from "./onStartMotion";
 import HoverMotion from "./hoverMotion";
@@ -17,6 +18,7 @@ export default function Layout({ children, home, myJobs }) {
   return (
     <>
       <div>
+        
         {!home && (
           <header>
             <div className={styles.backToHomeDiv}>
@@ -44,6 +46,7 @@ export default function Layout({ children, home, myJobs }) {
             <div>{children}</div>
           </div>
         )}
+
 
         <footer className={styles.homeFooter}>
           <div className={styles.footerDiv}>

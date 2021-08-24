@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import styles from "./hoverMotion.module.css";
 
+
 export default function HoverMotion({ children, image, backHome, sMediaIcon, workImage }) {
   return (
     <>
