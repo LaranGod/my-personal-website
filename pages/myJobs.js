@@ -4,7 +4,12 @@ import utilStyles from "../styles/utils.module.css";
 import OnStartMotion from "../components/onStartMotion";
 import HoverMotion from "../components/hoverMotion";
 import Image from "next/image";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
+
 
 export default function MyJobs() {
   return (
@@ -12,20 +17,20 @@ export default function MyJobs() {
       <Layout myJobs>
         {/* <div className="container"> */}
         <Head>
-            <title>My jobs</title>
-            <link
-              rel="preload"
-              href="/fonts/Mandalore/mandalore.ttf"
-              as="font"
-              crossOrigin=""
-            />
-            <link
-              rel="preload"
-              href="/fonts/Noto-Sans/NotoSans-Regular.ttf"
-              as="font"
-              crossOrigin=""
-            />
-          </Head>
+          <title>My jobs</title>
+          <link
+            rel="preload"
+            href="/fonts/Mandalore/mandalore.ttf"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/Noto-Sans/NotoSans-Regular.ttf"
+            as="font"
+            crossOrigin=""
+          />
+        </Head>
 
         <main>
           <OnStartMotion title>
@@ -60,40 +65,80 @@ export default function MyJobs() {
 
               <div className={utilStyles.workComponent}>
                 <HoverMotion workImage>
-                <Link href="https://github.com/LaranGod/InfoCepReact">
-                <img
-                    priority
-                    src="/images/Infocep.jpeg"
-                    height="auto"
-                    width="auto"
-                  />
-                </Link>
-                  
-                  
+                  <a className={utilStyles.linkNames}
+                    href="https://github.com/LaranGod/UploadMaterialForm"
+                    target="_blank"
+                  >
+                    <img
+                      className={utilStyles.jobImage}
+                      priority
+                      src="/images/Infocep.jpeg"
+                      
+                    />
+                    Infocep
+                  </a>
+
+                  <div className={utilStyles.techIcons}>
+                    <FontAwesomeIcon
+                      icon={["fab", "react"]}
+                      className={utilStyles.techIcon}
+                    />
+
+                    <FontAwesomeIcon
+                      icon={["fab", "node"]}
+                      className={utilStyles.techIcon}
+                    />
+                  </div>
                 </HoverMotion>
               </div>
               <div className={utilStyles.workComponent}>
                 <HoverMotion workImage>
-                <Link href="https://github.com/LaranGod/UploadMaterialForm">
-                  <img
-                    priority
-                    src="/images/Material_Form.jpeg"
-                    height="auto"
-                    width="auto"
-                  />
-                  </Link>
+                  <a className={utilStyles.linkNames}
+                    href="https://github.com/LaranGod/UploadMaterialForm"
+                    target="_blank"
+                  >
+                    <img
+                      className={utilStyles.jobImage}
+                      priority
+                      src="/images/Material_Form.jpeg"
+                      height="auto"
+                      width="auto"
+                    />
+                    Material Form
+                  </a>
+                  <div className={utilStyles.techIcons}>
+                    <FontAwesomeIcon
+                      icon={["fab", "react"]}
+                      className={utilStyles.techIcon}
+                    />
+                  </div>
                 </HoverMotion>
               </div>
               <div className={utilStyles.workComponent}>
                 <HoverMotion workImage>
-                <Link href="https://dribbble.com/shots/15876555-Rent">
-                  <img
-                    priority
-                    src="/images/Rent_mobile.png"
-                    height="auto"
-                    width="auto"
-                  />
-                  </Link>
+                  <a className={utilStyles.linkNames}
+                    href="https://dribbble.com/shots/15876555-Rent"
+                    target="_blank"
+                  >
+                    <img
+                      className={utilStyles.jobImage}
+                      priority
+                      src="/images/Rent_mobile.png"
+                     
+                    />
+                    Rent Mobile
+                  </a>
+                  <div className={utilStyles.techIcons}>
+                    <FontAwesomeIcon
+                      icon={["fab", "figma"]}
+                      className={utilStyles.techIcon}
+                    />
+                    <img 
+                    className={utilStyles.techIcon}
+                    src="images/ps.png"
+                    >
+                    </img>
+                  </div>
                 </HoverMotion>
               </div>
             </div>

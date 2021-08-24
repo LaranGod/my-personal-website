@@ -1,13 +1,8 @@
 import { motion } from "framer-motion";
 import styles from "./hoverMotion.module.css";
 
-export default function HoverMotion({
-  children,
-  image,
-  backHome,
-  sMediaIcon,
-  workImage,
-}) {
+
+export default function HoverMotion({ children, image, backHome, sMediaIcon, workImage }) {
   return (
     <>
       {backHome ? (
@@ -62,7 +57,7 @@ export default function HoverMotion({
         </motion.div>
       ) : (
         <motion.div
-        className={styles.buttonMotion}
+          className={styles.buttonMotion}
           whileHover={{
             position: "relative",
             scale: 1.2,

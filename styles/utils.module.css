@@ -5,7 +5,7 @@
   padding: 50px 0 0 50px;
 }
 
-.fullContainerHome {
+.fullContainer {
   height: 100vh;
   background: url(/images/StarrySky.gif) no-repeat;
   background-size: cover;
@@ -87,19 +87,49 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 2.6% 0;
   /* margin: 0 10%;
   max-width: 100rem; */
   min-height: 25rem;
   background-color: rgba(255, 255, 255, 0.02);
 }
+
 .workComponent {
   min-height: fit-content;
   width: 30%;
-  border: 5px solid rgba(8, 192, 233, 0.5);
 
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  flex-wrap: wrap;
+  
+  text-align: center;
+  font-family: "MandaloreRegular";
+  color: #08c0e9;
+  font-size: 24px ;
+  letter-spacing: 1px;
+}
 
+.jobImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 9999px;
+  border: 5px solid rgba(8, 192, 233, 0.5);
+  object-fit: cover;
+}
+
+.techIcons {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.techIcon {
+  color: white;
+  height: 2em;
+  width: 2em;
+}
+
+.linkNames {
+  color: #08c0e9;
 }

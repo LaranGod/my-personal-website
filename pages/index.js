@@ -29,7 +29,7 @@ const ButtonMyJobs = React.forwardRef(({ onClick, href }, ref) => {
 
 export default function Home() {
   return (
-    <div className={utilStyles.fullContainerHome}>
+    <div className={utilStyles.fullContainer}>
       <header className={utilStyles.headerDiv}></header>
       <Layout home>
         <div className={utilStyles.subContainer}>
