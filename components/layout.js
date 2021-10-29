@@ -7,12 +7,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 
+
 library.add(fas, fab);
 
 const name = "Miguel";
 export const siteTitle = "Next.js Sample Website";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, myJobs }) {
   return (
     <>
       <div>
@@ -34,49 +35,65 @@ export default function Layout({ children, home }) {
             </div>
           </header>
         )}
-        <div className={styles.container}>
-          <div>{children}</div>
-        </div>
+        {!myJobs ? (
+          <div className={styles.container}>
+            <div>{children}</div>
+          </div>
+        ) : (
+          <div className={styles.containerJobs}>
+            <div>{children}</div>
+          </div>
+        )}
+
         <footer className={styles.homeFooter}>
           <div className={styles.footerDiv}>
             <OnStartMotion>
               <HoverMotion sMediaIcon>
-                <Link href="https://www.linkedin.com/in/miguel-am%C3%A2ncio-951420213/">
+                <a
+                  href="https://www.linkedin.com/in/miguel-am%C3%A2ncio-951420213/"
+                  target="_blank"
+                >
                   <FontAwesomeIcon
                     icon={["fab", "linkedin"]}
                     className={styles.fontAw}
                   />
-                </Link>
+                </a>
               </HoverMotion>
             </OnStartMotion>
             <OnStartMotion>
               <HoverMotion sMediaIcon>
-                <Link href="https://github.com/LaranGod/">
+                <a href="https://github.com/LaranGod/" target="_blank">
                   <FontAwesomeIcon
                     icon={["fab", "github"]}
                     className={styles.fontAw}
                   />
-                </Link>
+                </a>
               </HoverMotion>
             </OnStartMotion>
             <OnStartMotion>
               <HoverMotion sMediaIcon>
-                <Link href="https://www.instagram.com/miguelcunha05/">
+                <a
+                  href="https://www.instagram.com/miguelcunha05/"
+                  target="_blank"
+                >
                   <FontAwesomeIcon
                     icon={["fab", "instagram"]}
                     className={styles.fontAw}
                   />
-                </Link>
+                </a>
               </HoverMotion>
             </OnStartMotion>
             <OnStartMotion>
               <HoverMotion sMediaIcon>
-                <Link href="https://www.facebook.com/miguel.cunha.5243817">
+                <a
+                  href="https://www.facebook.com/miguel.cunha.5243817"
+                  target="_blank"
+                >
                   <FontAwesomeIcon
                     icon={["fab", "facebook"]}
                     className={styles.fontAw}
                   />
-                </Link>
+                </a>
               </HoverMotion>
             </OnStartMotion>
           </div>

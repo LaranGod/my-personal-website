@@ -36,7 +36,7 @@ export default function Home() {
           <OnStartMotion title>
             <HoverMotion image>
               <Image
-                priority
+                priority = "true"
                 src="/images/Mando.jpg"
                 className={utilStyles.borderCircle}
                 height={200}
@@ -54,11 +54,18 @@ export default function Home() {
         </OnStartMotion>
 
         <div className="container">
-          <Head>
+        <Head>
             <title>Larangod</title>
             <link
               rel="preload"
               href="/fonts/Arcadepix/ARCADEPI.ttf"
+              href="/fonts/Mandalore/mandalore.ttf"
+              as="font"
+              crossOrigin=""
+            />
+            <link
+              rel="preload"
+              href="/fonts/Noto-Sans/NotoSans-Regular.ttf"
               as="font"
               crossOrigin=""
             />

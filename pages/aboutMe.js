@@ -15,10 +15,17 @@ export default function AboutME() {
             <title>About Me</title>
             <link
               rel="preload"
-              href="/fonts/Arcadepix/ARCADEPI.ttf"
+              href="/fonts/Mandalore/mandalore.ttf"
               as="font"
               crossOrigin=""
             />
+            <link
+              rel="preload"
+              href="/fonts/Noto-Sans/NotoSans-Regular.ttf"
+              as="font"
+              crossOrigin=""
+            />
+
           </Head>
 
           <main>
@@ -28,7 +35,7 @@ export default function AboutME() {
                   <a>
                     <HoverMotion image>
                       <Image
-                        priority
+                        priority="true"
                         src="/images/ProfilePic.jpg"
                         className={utilStyles.borderCircle}
                         height={200}

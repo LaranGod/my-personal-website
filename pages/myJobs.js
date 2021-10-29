@@ -3,7 +3,6 @@ import Layout from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import OnStartMotion from "../components/onStartMotion";
 import HoverMotion from "../components/hoverMotion";
-import Image from "next/image";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -69,7 +68,6 @@ export default function MyJobs() {
                   >
                     <img
                       className={utilStyles.jobImage}
-                      priority
                       src="/images/Infocep.jpeg"
                       
                     />
@@ -97,7 +95,6 @@ export default function MyJobs() {
                   >
                     <img
                       className={utilStyles.jobImage}
-                      priority
                       src="/images/Material_Form.jpeg"
                       height="auto"
                       width="auto"
@@ -120,7 +117,6 @@ export default function MyJobs() {
                   >
                     <img
                       className={utilStyles.jobImage}
-                      priority
                       src="/images/Rent_mobile.png"
                      
                     />
